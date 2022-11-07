@@ -129,7 +129,7 @@ main section .haut {
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 80vh;
+  height: 90vh;
 }
 main section .haut .gauche {
   display: flex;
@@ -217,9 +217,88 @@ main section .haut .droite .titre h3 {
 main section .haut .droite p {
   font-size: 20px;
   width: 80%;
-  margin-top: 50%;
+  margin-top: 60%;
   margin-left: 25%;
 }
-main section img {
-  width: 10%;
+main section .bas {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 90vh;
+}
+main section .bas .gauche {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+main section .bas .gauche h1 {
+  transform: rotate(-10deg);
+  font-size: 50px;
+}
+main section .bas .gauche h1 span {
+  font-family: "Grape Nuts", cursive;
+  color: #1b1c1e;
+  background: #f0e7e0;
+  padding: 0.25rem 2rem;
+  font-weight: 100;
+}
+main section .bas .gauche .circle {
+  width: 250px;
+  height: 250px;
+  background: #4f7059;
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+  margin-top: 4%;
+  margin-left: -3%;
+}
+main section .bas .gauche .txt {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-right: #1b1c1e 2px solid;
+  padding-right: 20%;
+}
+main section .bas .gauche .txt p {
+  font-size: 20px;
+  margin-top: 20%;
+}
+main section .bas .gauche .txt h4 {
+  font-size: 20px;
+  margin-top: 20px;
+  text-decoration: underline;
+}
+main section .bas .droite {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+main section .bas .droite .carte {
+  width: 40%;
+  margin: auto;
+}
+main section .bas .droite .carte img {
+  width: 100%;
+  border: #f0e7e0 12px solid;
+}
+main section .bas .droite .carte .description {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+main section .bas .droite .carte .description b {
+  background: #f0e7e0;
+  padding: 0.75rem 2rem;
+  border-radius: 50%;
+  font-size: 40px;
+  font-family: "Grape Nuts", cursive;
+  color: #1b1c1e;
+}
+main section .bas .droite .carte .description p {
+  font-size: 18px;
+  width: 65%;
+  margin: auto;
 }/*# sourceMappingURL=style.css.map */

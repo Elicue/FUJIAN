@@ -50,10 +50,13 @@
           <div class="bas">
               <div class="gauche">
                   <h1>ABOUT<br><span>The Beta</span></h1>
+                  <div class="circle"></div>
+                  
+                <div class="txt">
                   <p>The setting up of a culinary event in order to attract an audience to take an interest in the animal cause, to discover healthy dishes based on fresh and organic chicken, to introduce the brand. Chickens suffer from their rearing conditions, causing stress and disease. In addition to this, rearing conditions are not the only causes of mistreatment of chickens. All these factors make it difficult or even difficult to eat a quality chicken. not possible today.That's why we offer healthy dishes, in which we add healthy organic chicken that is good for humans. An important source of protein and vitamins, chicken is as good for the heart and lower in calories than other meats such as pork and beef.</p>
                   <h4 id="togg1">LEARN MORE</h4>
-                  <div class="circle"></div>
-              </div>
+                </div>
+            </div>
           
               <div class="droite">
                   <div class="carte">
@@ -74,7 +77,7 @@
           </div>
       </section>
   </main>
-<!-- 
+
   <div class="bg_modal">
       <div class="formulaire">
           <div id="d1">
@@ -156,7 +159,7 @@
               }
           ?>
       </div>
-  </div> -->
+  </div>
 
   
   <?php

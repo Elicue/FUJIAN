@@ -183,7 +183,7 @@ main {
       display: flex;
       flex-direction: row;
       width: 100%;
-      height: 80vh;
+      height: 90vh;
 
       .gauche {
         display: flex;
@@ -286,14 +286,107 @@ main {
         p {
           font-size: 20px;
           width: 80%;
-          margin-top: 50%;
+          margin-top: 60%;
           margin-left: 25%;
         }
       }
 
     }
-    img {
-      width: 10%;
+
+    .bas {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      height: 90vh;
+
+      .gauche {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+        h1 {
+          transform: rotate(-10deg);
+          font-size: 50px;
+
+          span{
+            font-family: 'Grape Nuts', cursive;
+            color: color(noir);
+            background: color(secondary);
+            padding: 0.25rem 2rem;
+            font-weight: 100;
+          }
+        }
+
+        .circle{
+          width: 250px;
+          height: 250px;
+          background: color(primary);
+          position: absolute;
+          border-radius: 50%;
+          z-index: -1;
+          margin-top: 4%;
+          margin-left: -3%;
+       }
+
+        .txt {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          border-right: color(noir) 2px solid;
+          padding-right: 20%;
+
+          p {
+            font-size: 20px;
+            margin-top: 20%;
+          }
+
+          h4 {
+            font-size: 20px;
+            margin-top: 20px;
+            text-decoration: underline;
+          }
+        }
+      }
+
+      .droite {
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .carte{
+          width: 40%;
+          margin: auto;
+          
+          img{
+            width: 100%;
+            border: color(secondary) 12px solid;
+         }
+
+         .description{
+          margin-top: 10px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+
+          b{
+            background: color(secondary);
+            padding: 0.75rem 2rem;
+            border-radius: 50%;
+            font-size: 40px;
+            font-family: 'Grape Nuts', cursive;
+            color: color(noir);
+         }
+
+         p{
+          font-size: 18px;
+          width: 65%;
+          margin: auto;
+       }
+       }
+       }
+      }
     }
   }
 }
