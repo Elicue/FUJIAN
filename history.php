@@ -19,10 +19,10 @@
     ?>
     
     
-    <div class="container_02">
-        <div class="content_02">
-            <div class="left_02">
-                <div class="text_02">
+    <div class=" history container">
+        <div class="content">
+            <div class="left">
+                <div class="text">
                     <p> <span class="color">What reasoning did we follow to create our brand, from the first idea to the final result.</span> </p>
                     <h1>HOW WE <span>  Came up </span>WITH OUR IDEA.</h1>
                     <p>The desire to embark on a new adventure takes us and we decide to create a restaurant chain dedicated to chicken. In order to stand out from the others, as both fans of Asian food, we then decided to include chicken.</p>
@@ -32,29 +32,29 @@
                     <img src="images/caret-forward-outline.svg" alt="arrow">
                 </div>
             </div>
-            <div class="right_02">
+            <div class="right">
                 <div class="circle"></div>
                 <img src="images/roll_05.jpg" class="bol">
                 <img src="images/pen.svg" class="pen">
             </div>
         </div>
         <div class="bandeau">
-            <div class="case_02">
+            <div class="case">
                 <p>5+</p>
                 <p>Starters </p>
             </div>
             <div class="barre"></div>
-            <div class="case_02">
+            <div class="case">
                 <p>10+</p>
                 <p>Main courses</p>
             </div>
             <div class="barre"></div>
-            <div class="case_02">
+            <div class="case">
                 <p>7+</p>
                 <p>Desserts</p>
             </div>
             <div class="barre"></div>
-            <div class="case_02">
+            <div class="case">
                 <p>12+</p>
                 <p>Drinks</p>
             </div>
@@ -68,10 +68,10 @@
             <img class="img__slider" src="images/roll_35.jpg" alt="img">
             <img class="img__slider" src="images/rolle_04.jpg" alt="img">
             <div class="suivant">
-                <ion-icon name="chevron-forward-circle-outline"></ion-icon>
+                <ion-icon color="white" name="chevron-forward-circle-outline"></ion-icon>
             </div>
             <div class="precedent">
-                <ion-icon name="chevron-back-circle-outline"></ion-icon>
+                <ion-icon color="white" name="chevron-back-circle-outline"></ion-icon>
             </div>
         </div>
         <div class="circle"></div>
@@ -82,16 +82,16 @@
         </div>
     </div>
 
-    <div class="centre_02">
-        <div class="contenu_02">
-            <div class="left_02">
-                <div class="text_02">
+    <div class="centre">
+        <div class="contenu">
+            <div class="left">
+                <div class="text">
                     <p>#Asianfood.</p>
                     <h1>Homemade with fresh products and love.</h1>
                     <p>The restaurant is popular for its calm and relaxing atmosphere allowing guests to unwind while eating. Mainly composed of cold colors, the atmosphere is no less warm. </p>
                 </div>
             </div>
-            <div class="center_02">
+            <div class="center">
                 <div class="colonne">
                     <img class="roll" src="images/roll_14.jpg" alt="roll">
                     <p class="size">#Healthy</p>

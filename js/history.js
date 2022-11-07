@@ -1,7 +1,5 @@
 "use strict"
 
-
-
 function toggleMenu () {  
     const navbar = document.querySelector('.navbar');
     const burger = document.querySelector('.burger');

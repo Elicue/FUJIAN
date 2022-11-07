@@ -15,7 +15,7 @@
 <body class="light">
 
   <?php
-  include('utils/header.php');
+    include('utils/header.php');
   ?>
 
   <main>
@@ -86,27 +86,27 @@
                       <div class="form">
                           <h2>Login Form</h2>
                           <form action="parrainage.php" method="post">
-                              <div class="inputBox cadre">
-                                  <input type="text" placeholder="Name">
-                              </div>
-                              <div class="inputBox cadre">
-                                  <input type="text" placeholder="First name">
-                              </div>
-                              <div class="inputBox cadre">
-                                  <input type="email" placeholder="mail" name="mail">
-                              </div>
-                              <div class="inputBox cadre">
-                                  <input type="text"  placeholder="Password" id="password" >
-                                  <img src="images/copy-outline.svg" class="copy" alt="copier_mdp"
-                                      onclick="copyPassword();">
-                              </div>
-                              <div id="btn" onclick="getPassword();">Generate Password</div>
-                              <div class="alertBox"></div>
-                              <div class="inputBox">
-                                  <input type="submit" value="Submit">
-                              </div>
+                            <div class="inputBox cadre">
+                                <input type="text" placeholder="Name">
+                            </div>
+                            <div class="inputBox cadre">
+                                <input type="text" placeholder="First name">
+                            </div>
+                            <div class="inputBox cadre">
+                                <input type="email" placeholder="mail" name="mail">
+                            </div>
+                            <div class="inputBox cadre">
+                                <input type="text"  placeholder="Password" id="password" >
+                                <img src="images/copy-outline.svg" class="copy" alt="copier_mdp"
+                                    onclick="copyPassword();">
+                            </div>
+                            <div id="btn" onclick="getPassword();">Generate Password</div>
+                            <div class="alertBox"></div>
+                            <div class="inputBox">
+                                <input type="submit" value="Submit">
+                            </div>
                           </form>
-
+                          
                       </div>
                   </div>
           </div>
@@ -130,7 +130,7 @@
       <div class="fond"></div>
   </div>
 
-  <div class="comms">
+  <!-- <div class="comms">
       <h1>Reviews </h1>    
       <div class="reviews">
           <?php
@@ -159,11 +159,11 @@
               }
           ?>
       </div>
-  </div>
+  </div> -->
 
   
   <?php
-  include('utils/footer.php');
+    include('utils/footer.php');
   ?>
 
   <script src="js/script.js"></script>
