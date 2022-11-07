@@ -28,19 +28,19 @@
                           <h2>DISCOVER <span>more</span> </h2>
                           <img src="images/arrow.png" alt="fleche">
                       </div>
-                      <img src="images/roll_03.jpg" class="gauche" alt="image">
+                      <img src="images/roll_03.jpg" class="gauche food" alt="image">
                   </div>
                   <div class="carte">
-                      <img src="images/roll_24.jpg" alt="image">
+                      <img class="food" src="images/roll_24.jpg" alt="image">
                       <div class="lien">
                           <h2>DISCOVER <span>more</span> </h2>
                           <img src="images/arrow.png" class="fleche" alt="fleche">
                       </div>
-                      <div class="circle"></div>
                   </div>
               </div>
               <div class="droite">
                   <div class="titre">
+                      <div class="circle"></div>
                       <h2>ASIAN</h2>
                       <h3>food</h3>
                   </div>
@@ -74,7 +74,7 @@
           </div>
       </section>
   </main>
-
+<!-- 
   <div class="bg_modal">
       <div class="formulaire">
           <div id="d1">
@@ -156,7 +156,7 @@
               }
           ?>
       </div>
-  </div>
+  </div> -->
 
   
   <?php
