@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Bahnschrift', sans-serif;
+  color: #191919;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+$colors :(
+  noir:#1b1c1e,
+  gris:grey,
+  primary:#4f7059,
+  secondary:#f0e7e0,
+  blanc: #FDF6F8,
+  fond :#4f705975,
+  fond_01 :#ffffff83,
+);
+
+$border-height : 1px;
+
+@function color($color-name) {
+  @return map-get($colors, $color-name)
+}
+
+$desktop :800px;
+
+@mixin desktop {
+  @media (min-width : #{$desktop}) {
+    @content;
+  }
+}
+
+// ! -------------------------HEADER-------------------------
+
+header {
+  display: flex;
+  flex-direction: row;
+  width :100%;
+  height: 10vh;
+  background: rgba(255, 255, 255, 0.5);
+  position: fixed;
+  z-index: 3;
+  top: 0;
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+
+    .navbar__logo {
+      width: 28%;
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 50%;
+      }
+    }
+
+    .navbar__links{
+      width: 35%;
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+
+      li {
+        margin: 20px;
+        color: color(noir);
+        font-size: 20px;
+
+        a {
+          text-decoration: none;
+        }
+     }
+    }
+
+    .options {
+      width: 28%;
+      display: flex;
+      flex-direction: row;
+      justify-content: end;
+      align-items: center;
+
+      .icones {
+        display: flex;
+        flex-direction: row;
+        width: 65%;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+          height: 30px;
+        }   
+        
+        #toggle{
+          position: relative;
+          display: block;
+          width: 80px;
+          height: 40px;
+          border-radius: 160px;
+          background: #FFF;
+          transition: 0.2s;
+          box-shadow: inset 0 6px 60px rgba(0, 0, 0, 0.1),
+                      inset 0 2px 8px rgba(0, 0, 0, 0.1),
+                      inset 0 4px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        #toggle.active{ 
+          background: #222;
+          box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.1),
+                      inset 0 8px 8px rgba(0, 0, 0, 0.1),
+                      inset 0 4px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        #toggle .indicator{
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          transform: scale(0.9);
+          background: linear-gradient(to bottom, #eaeaea, #f9f9f9);
+          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1),
+                      inset 0 4px 4px rgba(255, 255, 255, 1),
+                      inset 0 4px 4px rgba(255, 255, 255, 1);
+          transition: 0.5s;
+          background: url("../images/moon-outline.svg");
+          background-size: 30px;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+
+        #toggle.active .indicator{
+          left: 40px;
+          background: linear-gradient(to bottom, #444, #222);
+          box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5),
+                      inset 0 4px 4px rgba(255, 255, 255, 0.2),
+                      inset 0 4px 4px rgba(255, 255, 255, 0.2);
+          background: url("../images/sun.png");
+          background-size: 90px;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+      }
+
+    }
+
+  }
+}
+
+// ! -------------------------HEADER-------------------------
+// * -------------------------HOME-------------------------
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+
+  .fond {
+    position: absolute;
+    z-index: -1;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+
+    .haut {
+      margin-top: 10vh;
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+
+      .gauche {
+        display: flex;
+        flex-direction: row;
+
+        .carte {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+
+    }
+  }
+  img {
+    width: 10%;
+  }
+}
+
+// * -------------------------HOME-------------------------

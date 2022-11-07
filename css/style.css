@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bahnschrift", sans-serif;
+  color: #191919;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 10vh;
+  background: rgba(255, 255, 255, 0.5);
+  position: fixed;
+  z-index: 3;
+  top: 0;
+}
+header .navbar {
+  display: flex;
+  flex-direction: row;
+  width: 95%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+header .navbar .navbar__logo {
+  width: 28%;
+  display: flex;
+  align-items: center;
+}
+header .navbar .navbar__logo img {
+  width: 50%;
+}
+header .navbar .navbar__links {
+  width: 35%;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+header .navbar .navbar__links li {
+  margin: 20px;
+  color: #1b1c1e;
+  font-size: 20px;
+}
+header .navbar .navbar__links li a {
+  text-decoration: none;
+}
+header .navbar .options {
+  width: 28%;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+}
+header .navbar .options .icones {
+  display: flex;
+  flex-direction: row;
+  width: 65%;
+  justify-content: space-between;
+  align-items: center;
+}
+header .navbar .options .icones .logo {
+  height: 30px;
+}
+header .navbar .options .icones #toggle {
+  position: relative;
+  display: block;
+  width: 80px;
+  height: 40px;
+  border-radius: 160px;
+  background: #FFF;
+  transition: 0.2s;
+  box-shadow: inset 0 6px 60px rgba(0, 0, 0, 0.1), inset 0 2px 8px rgba(0, 0, 0, 0.1), inset 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+header .navbar .options .icones #toggle.active {
+  background: #222;
+  box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.1), inset 0 8px 8px rgba(0, 0, 0, 0.1), inset 0 4px 4px rgba(0, 0, 0, 0.05);
+}
+header .navbar .options .icones #toggle .indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transform: scale(0.9);
+  background: linear-gradient(to bottom, #eaeaea, #f9f9f9);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1), inset 0 4px 4px rgb(255, 255, 255), inset 0 4px 4px rgb(255, 255, 255);
+  transition: 0.5s;
+  background: url("../images/moon-outline.svg");
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+header .navbar .options .icones #toggle.active .indicator {
+  left: 40px;
+  background: linear-gradient(to bottom, #444, #222);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5), inset 0 4px 4px rgba(255, 255, 255, 0.2), inset 0 4px 4px rgba(255, 255, 255, 0.2);
+  background: url("../images/sun.png");
+  background-size: 90px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+main .fond {
+  position: absolute;
+  z-index: -1;
+}
+main section {
+  display: flex;
+  flex-direction: column;
+}
+main section .haut {
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+main section .haut .gauche {
+  display: flex;
+  flex-direction: row;
+}
+main section .haut .gauche .carte {
+  display: flex;
+  flex-direction: column;
+}
+main img {
+  width: 10%;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,14 @@
+.alternance formes abrupts & arrondies,
+.bcp d'image pr présenter les produits & le client peut s'assurer de la qualité visuelle des plats,
+.couleurs récurentes => vert : #4f7059
+		        beige : #f0e7e0
+			noir : #1b1c1e
+
+.dark thème & light thème,
+.polices récurentes => Rage Italic
+		       Bahnschrift
+.header & footer récurents d'une pge à l'autre,
+.design aéré & responsive,
+.formes récurentes (cercles/flèches/bouttons...),
+.les images & photos sont qualitatives et représentent correctement le service proposé,
+.design instinctif & simple.
