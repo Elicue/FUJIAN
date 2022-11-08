@@ -115,12 +115,12 @@ footer {
   background: #f0e7e0;
   border-top: #1b1c1e 2px solid;
   margin-top: 10vh;
-  height: 50vh;
+  height: 55vh;
   position: relative;
 }
 footer .circle {
   width: 400px;
-  height: 500px;
+  height: 400px;
   background: #fff;
   position: absolute;
   border-radius: 100% 0 0 0;
@@ -134,25 +134,24 @@ footer .content {
   width: 100%;
   height: 100%;
   margin: auto;
-  border: red 1px solid;
+  height: 50vh;
 }
 footer .content .gauche {
   display: flex;
   flex-direction: column;
   width: 60%;
   margin: auto;
-  border: red 1px solid;
   height: 100%;
 }
 footer .content .gauche .centre {
   display: flex;
   flex-direction: row;
+  width: 100%;
 }
 footer .content .gauche .centre .left {
   display: flex;
   flex-direction: column;
-  width: 70%;
-  margin: auto 0;
+  width: 60%;
   color: #1b1c1e;
 }
 footer .content .gauche .centre .left h1 {
@@ -166,13 +165,12 @@ footer .content .gauche .centre .left p {
   font-size: 20px;
   margin-top: 15vh;
 }
-footer .content .gauche .centre .left .reseaux {
+footer .content .gauche .centre .reseaux {
   display: flex;
-  flex-direction: row;
-  margin-top: 50px;
-  background-color: red;
+  flex-direction: column;
+  width: 40%;
 }
-footer .content .gauche .centre .left .reseaux a {
+footer .content .gauche .centre .reseaux a {
   display: flex;
   flex-direction: row;
   color: #1b1c1e;
@@ -181,7 +179,7 @@ footer .content .gauche .centre .left .reseaux a {
   margin: 1rem 2rem;
   align-items: center;
 }
-footer .content .gauche .centre .left .reseaux a ion-icon {
+footer .content .gauche .centre .reseaux a ion-icon {
   width: 30px;
   height: 30px;
   border: #1b1c1e 1px solid;
@@ -190,12 +188,29 @@ footer .content .gauche .centre .left .reseaux a ion-icon {
   margin-right: 2vh;
   color: #1b1c1e;
 }
-footer .content .gauche .centre .left .reseaux a ion-icon:hover {
+footer .content .gauche .centre .reseaux a ion-icon:hover {
   border: #1b1c1e 1px solid;
   color: #1b1c1e;
 }
+footer .content .gauche .liens {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 20px;
+  align-items: center;
+}
+footer .content .gauche .liens a {
+  color: #1b1c1e;
+  text-decoration: none;
+}
+footer .content .gauche .liens .point {
+  background: #1b1c1e;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
 footer .content .droite {
-  width: 30%;
+  width: 25%;
 }
 
 main {
