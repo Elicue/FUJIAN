@@ -12,7 +12,7 @@
     <title>SUBSCRIPTION</title>
     <link rel="icon" type="image/png" href="images/sushi.png" />
 </head>
-<body class="light">
+<body class=" sub light">
 
     <?php
         include('utils/header.php');

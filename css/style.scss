@@ -1083,3 +1083,332 @@ main {
 }
 
 // TODO -------------------------HISTORY-------------------------
+// ! ------------------------SUBSCRIPTION------------------------
+
+.sub {
+
+  .subscription{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-top: 15vh;
+
+    h2{
+      font-size: 50px;
+
+      span{
+        font-family: 'Grape Nuts', cursive;
+        color: color(noir);
+      }
+    
+    }
+
+    .container{
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+
+      .imgs{
+        display: flex;
+        flex-direction: row;
+
+        .contenant{
+          display: flex;
+          flex-direction: column;
+          position: relative;
+
+          img{
+            width: 90%;
+            border: 10px transparent solid;
+            outline: $border-height solid color(noir);
+          }
+
+          .img_1{
+            border-radius: 50% 0 0 0;
+          }
+
+          .img_3{
+            border-radius: 0 50% 0 0;
+          }
+
+          .circle{
+            width: 200px;
+            height: 200px;
+            background: color(secondary);
+            position: absolute;
+            border-radius: 50%;
+            z-index: -1;
+            left: -20%;
+          }
+
+          .cercle{
+            width: 200px;
+            height: 200px;
+            background: color(secondary);
+            position: absolute;
+            border-radius: 50%;
+            z-index: -1;
+            right: -10%;
+            bottom: 20%;
+          }
+
+          .content{
+            display: flex;
+            flex-direction: column;
+            
+            input[type=checkbox]{
+              margin-bottom: -5px;
+              -webkit-appearance: none;
+              border: 1px solid color(noir);
+              height: 20px;
+              width: 20px;
+              border-radius: 5px;
+              background: rgba(255, 255, 255, 0.3);
+              margin-left: 10px;
+              margin-top: 20px;
+            }
+
+            input[type="checkbox"]:checked {
+              background: url(../images/checkmark-outline.svg);
+              background-color: rgba(255, 255, 255, 0.3);
+            }
+          
+          }
+        
+        
+        }
+      }
+
+      .prix{
+        text-align: center;
+        border-bottom: $border-height solid color(noir);
+        margin-top: 5vh;
+
+        p{
+          font-size: 20px;
+          margin-top: 2vh;
+        }
+
+        .barre{
+          border-bottom: $border-height solid #fff;
+          margin-top: 10px;
+        }
+      }
+    
+    }
+  } 
+
+  .center{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 90%;
+    margin-top: 10vh;
+    height: 90vh;
+
+    .left{
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      margin: auto;
+      height: 55%;
+      border-right: color(noir) 2px solid;
+      position: relative;
+      justify-content: space-between;
+
+      h1{
+        // position: absolute;
+        font-size: 70px;
+        z-index: 2;
+
+        img{
+          width: 15%;
+        }
+
+        span{
+          font-family: 'Londrina Outline', cursive;
+          color: color(noir);
+          // padding: 0.25rem 2rem;
+          font-weight: bolder;
+          font-size: 100px;
+        }
+       
+      }
+
+      .circle{
+        width: 250px;
+        height: 250px;
+        background: color(primary);
+        position: absolute;
+        border-radius: 50%;
+        z-index: -1;
+        left: -10%;
+        top: 10%;
+      }
+
+      p{
+        width: 80%;
+        font-size: 20px;
+     }
+     
+    }
+
+    .right{
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      margin: auto;
+      align-items: center;
+
+      img{
+        width: 70%;
+        border-radius: 40% 0 40% 0;
+        border: 10px transparent solid;
+        outline: $border-height solid color(noir);
+      }
+    }
+   
+  }
+
+  .dessous{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: auto;
+    height: 90vh;
+    justify-content: space-between;
+
+    .gauche{
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      margin: auto;
+      position: relative;
+
+      img{
+        width: 70%;
+        margin: auto;
+        border-radius: 0 30% 0 30%;
+        z-index: 2;
+      }
+
+      .rectangle{
+        width: 70%;
+        z-index: 1;
+        height: 100%;
+        background: transparent;
+        position: absolute;
+        margin: auto;
+        border-radius: 0 30% 0 30%;
+        border: color(noir) $border-height solid;
+        outline: 1px solid #fff;
+        top: 5%;
+        right: 10%;
+      }
+    }
+
+    .droite{
+      display: flex;
+      flex-direction: column;
+      width: 45%;
+      margin: auto;
+      position: relative;
+
+      .titre{
+        position: relative;
+        z-index: 2;
+
+        h2{
+          transform: rotate(-25deg);
+          position: absolute;
+          font-size: 50px;
+          top: -8vh;
+          left: -8vh;
+        }
+
+        h3{
+          font-family: 'Grape Nuts', cursive;
+          font-size: 50px;
+          font-weight: 100;
+        }
+      }
+
+      p{
+        font-size: 20px;
+      }
+
+      .circle{
+        width: 200px;
+        height: 200px;
+        background: color(primary);
+        position: absolute;
+        border-radius: 50%;
+        z-index: -1;
+      }
+
+      .star .container{
+        position: relative;
+        width: 50%;
+        border-radius: 5px;
+        justify-content: center;
+        flex-direction: column;
+        margin: auto;
+        display: flex;
+
+        .post{
+          display: none;
+
+          .text{
+            font-size: 25px;
+            font-weight: 500;
+          }
+  
+          .edit{
+            position: absolute;
+            right: 10px;
+            top: 5px;
+            font-size: 16px;
+            font-weight: 500;
+          }
+
+          .edit:hover{
+            text-decoration: underline;
+         }
+         
+        }
+
+        .star-widget  {
+
+          input{
+            display: none;
+          }
+  
+          label{
+            font-size: 40px;
+            padding: 0 10px;
+            float: right;
+            transition: all 0.2s ease;
+         }
+
+         .username{
+            display: flex;
+            flex-direction: column;
+          }
+        }
+       
+       
+      }
+     
+     
+    }
+ 
+  }
+
+  img {
+    width: 10%;
+  }
+
+}
+// ! ------------------------SUBSCRIPTION------------------------
